@@ -1,0 +1,52 @@
+.logo-seitan {
+    width: 100%;
+    align-content: flex-start;
+}
+
+.bg-azulito {
+    background-color: #d42e22d0;
+    margin: auto;
+} 
+
+#cuenta-carrito {
+    background-color: red;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    line height: 20px;
+    }
+
+h2 {
+    color: #000000;
+}
+
+.card {
+    background-color: #e94539;
+    border-radius: 20px;
+    border: none;
+        box-shadow: 0 8px 20px rgba(43, 3, 3, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+padding-top: 15px;
+    }
+
+
+body {
+    background-color: rgba(43, 3, 3, 0.726);
+}
+
+.card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+
+.card:hover {
+    transform: translateY(-10px); 
+box-shadow: 0 10px 20px rgba(43, 3, 3, 0.726); 
+}
+
+.precio {
+    text-align: center;
+}
