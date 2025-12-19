@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
           rel="stylesheet"
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
@@ -32,11 +31,33 @@
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link active fs-4" href="#">Inicio</a>
                     <a class="nav-link fs-4" href="#">Contacto</a>
-                    <a class="nav-link fs-4" href="../ejemplo1/cart.html"><i class="fa-solid fa-basket-shopping"></i></a> <span id="cuenta-carrito">0</span>
+                    <a class="nav-link fs-4" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop href="#"><i class="fa-solid fa-basket-shopping"></i></a> <span id="cuenta-carrito">0</span>
                 </div>
             </div>
         </div>
     </nav>
+
+    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="staticBackdropLabel">Carrito de compras</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <h2>Productos</h2>
+				<div class="mt-3 d-flex align-items-center gap-2">
+					<img
+						src="assets/img/seitan mechada.jfif"
+						class="img-cart"
+						alt="Mechada"
+					/>
+					<div class="text-cart d-flex justify-content-between w-100">
+						<p>Seitan Mechada</p>
+						<p>$7500</p>
+					</div>
+				</div>
+  </div>
+  <button class="btn btn-dark mt-auto mx-2 mb-2">Pagar</button>
+</div>
 
 <section class="container mb-5">
     <h2 class="text-center my-5 display-5 fw-normal">Nuestros Productos</h2>
@@ -45,132 +66,177 @@
 
         
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <a href="../ejemplo1/seitan1.html" target="_blank" class="text-decoration-none text-dark">
+
             <div class="card h-100">
                 <img src="assets/img/seitan mechada.jfif" class="card-img-top" alt="Mechada">
                 <div class="card-body d-flex flex-column">
-                    <h3>Seitan Mechada</h3>
+                    <div class="flex-grow-1">
+                       <h3>Seitan Mechada</h3>
                     <p class="card-text">
                         Seitán Mechada, especial para acompañarlo con un rico puré o en un rico sandwich
+            
                     </p>
+                    </div>
+                    
+                      <a class href="../ejemplo1/seitan1.html"></a>
                     <div class="precio">
                       <span>$7500</span>
                     </div>
                     <button class="btn btn-dark btn-agregar mt-auto">Agregar al carrito</button>
                 </div>
+                </a>
             </div>
         </div>
 
         
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="../ejemplo1/seitan2.html" target="_blank" class="text-decoration-none text-dark">
+                
             <div class="card h-100">
                 <img src="assets/img/seitan.jpg" class="card-img-top" alt="Seitan clásico">
                 <div class="card-body d-flex flex-column">
-                    <h3>Seitan clásico</h3>
+                    <div class="flex-grow-1">
+                        <h3>Seitan clásico</h3>
                     <p class="card-text">
                         El clásico que no falla. Seitán artesanal, firme y sabroso, hecho a pulso y sin maquillaje.
                     </p>
+                    </div>
+                    
                     <div class="precio">
                       <span>$7500</span>
                     </div>
                     <button class="btn btn-dark btn-agregar mt-auto">Agregar al carrito</button>
                 </div>
             </div>
+        </a>
         </div>
-
+ 
         
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="../ejemplo1/seitan3.html" target="_blank" class="text-decoration-none text-dark">
             <div class="card h-100">
                 <img src="assets/img/Seitan chimi.png" class="card-img-top" alt="Seitán chimichurri">
                 <div class="card-body d-flex flex-column">
-                    <h3>Seitán chimichurri</h3>
+                    <div class="flex-grow-1">
+
+                        <h3>Seitán chimichurri</h3>
                     <p class="card-text">
-                        Seitán con chimichurri intenso, aromático y sin pedir permiso.
+                        Seitán con chimichurri intenso y aromático
                     </p>
+                    </div>
+                    
                     <div class="precio">
-                      <span>$7500</span>
+                    <span>$7500</span>
                     </div>
                     <button class="btn btn-dark btn-agregar mt-auto">Agregar al carrito</button>
                 </div>
             </div>
+        </a>
         </div>
 
         
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
+        <a href="../ejemplo1/Hummusnegro.html" target="_blank" class="text-decoration-none text-dark"> 
+                <div class="card h-100">
                 <img src="assets/img/hummus poroto negro.jpg" class="card-img-top" alt="Hummus negro">
                 <div class="card-body d-flex flex-column">
-                    <h3>Hummus Negro</h3>
+                    <div class="flex-grow-1">
+                        <h3>Hummus Negro</h3>
                     <p class="card-text">
                         Hummus de poroto negro, oscuro, intenso y distinto.
                     </p>
+                    </div>
+                    
                     <div class="precio">
                       <span>$8000</span>
                     </div>
                     <button class="btn btn-dark btn-agregar mt-auto">Agregar al carrito</button>
                 </div>
             </div>
+        </a>
         </div>
 
         
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="../ejemplo1/ajo.html" target="_blank" class="text-decoration-none text-dark">
             <div class="card h-100">
                 <img src="assets/img/Garlic-Hummus.jpg" class="card-img-top" alt="Hummus ajo">
                 <div class="card-body d-flex flex-column">
+                    <div class="flex-grow-1">
                     <h3>Hummus Clásico Ajo</h3>
                     <p class="card-text">
                         Hummus cremoso, cargado de ajo y personalidad.
                     </p>
+                        
+                    </div>
+                   
                     <div class="precio">
                       <span>$5500</span>
                     </div>
                     <button class="btn btn-dark btn-agregar mt-auto">Agregar al carrito</button>
                 </div>
             </div>
+        </a>
         </div>
 
         
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="../ejemplo1/lentejas.html" target="_blank" class="text-decoration-none text-dark">
             <div class="card h-100">
                 <img src="assets/img/pate lentejas.jfif" class="card-img-top" alt="Paté de lentejas">
                 <div class="card-body d-flex flex-column">
+                    <div class="flex-grow-1">
                     <h3>Paté de lentejas</h3>
                     <p class="card-text">
                         Paté de lentejas hecho en casa, potente y honesto.
                     </p>
+                    </div>
+                    
                     <div class="precio">
                       <span>$6000</span>
                     </div>
                     <button class="btn btn-dark btn-agregar mt-auto">Agregar al carrito</button>
                 </div>
             </div>
+        </a>
         </div>
 
         
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="../ejemplo1/almendras.html" target="_blank" class="text-decoration-none text-dark">
             <div class="card h-100">
                 <img src="assets/img/leche almendras.jfif" class="card-img-top" alt="Leche de almendras">
                 <div class="card-body d-flex flex-column">
-                    <h3>Leche de almendras</h3>
+                    <div class="flex-grow-1">
+                        <h3>Leche de almendras</h3>
                     <p class="card-text">
                         Leche de almendras artesanal, suave pero con carácter.
                     </p>
+                    </div>
+                    
                     <div class="precio">
                       <span>$9000</span>
                     </div>
                     <button class="btn btn-dark btn-agregar mt-auto">Agregar al carrito</button>
                 </div>
             </div>
+        </a>
         </div>
 
         
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="../ejemplo1/colademono.html" target="_blank" class="text-decoration-none text-dark">
             <div class="card h-100">
                 <img src="assets/img/colademono.jpg" class="card-img-top" alt="Cola de mono">
                 <div class="card-body d-flex flex-column">
-                    <h3>Cola de Mono</h3>
+                    <div class="flex-grow-1">
+                        <h3>Cola de Mono</h3>
                     <p class="card-text">
                         Clásico chileno versión vegana, especias y espíritu festivo.
                     </p>
+                    </div>
+                    
                     <div class="precio">
                       <span>$12000</span>
                     </div>
@@ -178,7 +244,7 @@
                 </div>
             </div>
         </div>
-
+</a>
     </div>
 </section>
 
@@ -198,16 +264,22 @@
         </div>
     </section>
 
+<h5 class=>Nuestra Tienda</h5>
+    <div class="contacto">
+<p class="mb-1"> Dirección: Valparaíso, Chile</p>
+<p class="mb-1"> Teléfono: +56 9 1234 5678</p>
+<p class="mb-1"> Email: seitán@seitan.com</p>
+
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
 
-    <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/c194e7b6b0.js" crossorigin="anonymous"></script>
 
      <script src="assets/js/script.js"></script>
